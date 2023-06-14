@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
 public class main {
-public static void main(String[] args) {
+    public static void main(String[] args) {
+      
+        Integer input[] = new Integer[5];
         
-Integer input[] = new Integer[5];
- try( Scanner teclado = new Scanner(System.in)) {
-
- for(int x =0; x<5;x++){
-   System.out.println("Inisira um número: ");
-   input[x] = teclado.nextInt();
+      try  (Scanner keyboard = new Scanner(System.in)) {
+           
+            for(int x =0; x<5;x++){
+                System.out.println("Inisira um número: ");
+                input[x] = keyboard.nextInt();
                   
             }
         }
 
-        
         for(int x =0; x<5;x++){
             System.out.println("[" +x+ "] = " + input[x] );
 
