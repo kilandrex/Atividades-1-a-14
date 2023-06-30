@@ -1,0 +1,40 @@
+package ExSeverino.Ex4;
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+       
+      try (Scanner input = new Scanner(System.in)) {
+         
+            String ListaLetras[] = new String[10];
+            int consoantes = 0;
+
+
+          
+            for(int i = 0; i<10 ; i++){
+
+                System.out.println("Insira uma letra: ");
+                String letra = input.next().toUpperCase();
+       
+                
+                if(!letra.equals("A") &&  !letra.equals("E") &&  !letra.equals("I") &&  !letra.equals("O") && !letra.equals("U")){
+                    consoantes ++;
+                }
+                
+                ListaLetras[i] = letra;
+            }
+
+            
+            for(String letra : ListaLetras){
+               
+                if(!letra.equals("A") && !letra.equals("E") && !letra.equals("I") && !letra.equals("O") && !letra.equals("U")){
+                    System.out.println(letra);
+                }
+            }
+
+           
+            System.out.println("O Número de Consoantes é: " + consoantes);
+        }
+    }
+}
