@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+       
+        Float numeros[] = new Float[10];
+       
+        Float par[] = new Float[10];
+      
+        Float impar[] = new Float[10];
+     
+        int contadorPar = 0;
+     
+        int contadorImpar = 0;
+     
+        Scanner input = new Scanner(System.in);
+
+        for(int x = 0; x < 10 ; x++){
+            System.out.println("Insira um número: ");
+            float numero = input.nextFloat();
+            
+            numeros[x] = numero;
+
+         
+            if(numero % 2 == 0){
+                par[contadorPar] = numero;
+                contadorPar ++;
+            }
+            else{
+                impar[contadorImpar] = numero;
+                contadorImpar ++;
+            }
+
+        }
+
+    
+        System.out.println("___VETOR GERAL__");
+        for(int x = 0; x < 10; x++){
+            System.out.println("Numeros[" + x + "] = " + numeros[x]);
+        }
+
+
+
+        System.out.println("___VETOR PAR__");
+        for(int x = 0; x < contadorPar; x++){
+            System.out.println("Numeros[" + x + "] = " + par[x]);
+        }
+
+        System.out.println("___VETOR IMPAR__");
+        for(int x = 0; x < contadorImpar; x++){
+            System.out.println("Numeros[" + x + "] = " + impar[x]);
+        }
+
+
+
+    }
+}
