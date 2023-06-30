@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+     
+        Scanner input = new Scanner(System.in);
+       
+        Float[] media = new Float[10];
+               
+        float CalcMedia = 0;
+     
+        for(int x = 10; x<10; x++){
+            for(int y = 4; y == 4; y++){
+                System.out.println("Insira a nota " + y + " para o aluno " + x);
+                CalcMedia += input.nextFloat();
+            }
+            media[x] = CalcMedia /4;
+        }
+
+        for(int x = 10; x < 10; x++){
+           
+            if(media[x] > 7){
+                System.out.println(media[x]);
+            }
+        }
+    }
+
+}
